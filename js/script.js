@@ -11,15 +11,13 @@ document.getElementById("paymentsBtn").addEventListener("click", function () {
 });
 
 const showFinesButton = document.getElementById('penaltiesBtn');
-const searchFines = document.getElementById('searchBtn');
-
+const searchFinesButton = document.getElementById('searchBtn');
 
 function populateFinesTable(fines) {
-
     const tableBody = document.getElementById('finesTableBody');
     let tableList = document.querySelectorAll("#finesTableBody>tr");
 
-    if(document.querySelector("#finesTableBody>tr"))
+    if (document.querySelector("#finesTableBody>tr"))
         removeTable(tableList);
 
     fines.forEach(fine => {
@@ -34,20 +32,17 @@ function populateFinesTable(fines) {
     });
 }
 
-function removeTable(list){
-    list.forEach(list => list.remove())
+function removeTable(list) {
+    list.forEach(list => list.remove());
 }
 
-//Функція повернення всіх штрафів
 showFinesButton.addEventListener('click', () => {
-    populateFinesTable(data.finesData);
+    populateFinesTable(window.data.finesData);
 });
 
-
-// Функція пошуку штрафів
-searchFines.addEventListener('click', () => {
+searchFinesButton.addEventListener('click', () => {
     let number = document.getElementById("searchInput2").value;
     let fineType = document.getElementById("searchInput").value;
     let searchData = (number) ? number : fineType;
-    populateFinesTable(fineList.searchFines(searchData));
-})
+    populateFinesTable(window.fineList.searchFines(searchData));
+});
