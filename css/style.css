@@ -46,38 +46,36 @@ button:hover {
 }
 
 table {
-    margin: 0 auto; /* Розміщення таблиці по центру */
-    border-collapse: collapse; /* Злиття границь комірок */
-    width: 80%; /* Ширина таблиці, можна налаштувати за бажанням */
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
 }
 
 table, th, td {
-    border: 1px solid #000; /* Границі таблиці, комірок і заголовків */
+    border: 1px solid #000;
 }
 
 th, td {
-    padding: 8px; /* Відступи від тексту в комірках */
-    text-align: center; /* Вирівнювання тексту по центру в комірках */
+    padding: 8px;
+    text-align: center;
 }
 
 th {
-    background-color: #007bff; /* Колір фону для заголовків */
-    color: white; /* Колір тексту для заголовків */
+    background-color: #007bff;
+    color: white;
 }
 
-/* Стилізація контейнера для поля введення і кнопки */
 .search-container {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Стилізація поля введення для пошуку */
-#searchInput, #searchInput2  {
+#searchInput,
+#searchInput2 {
     padding: 10px;
     font-size: 16px;
 }
 
-/* Стилізація кнопки для пошуку */
 #searchBtn {
     padding: 10px 20px;
     background-color: #4ed401;
@@ -91,7 +89,6 @@ th {
     background-color: #3aa200;
 }
 
-/* Стилізація форми оплати штрафів */
 #paymentForm {
     text-align: center;
     margin-top: 20px;
@@ -126,47 +123,44 @@ button[type="submit"]:hover {
     background-color: #3aa200;
 }
 
-/* Стилізація форми оплати штрафів */
 #paymentForm {
     text-align: center;
-    margin: 0 auto; /* Розміщення по центру екрану */
-    max-width: 30%; /* Максимальна ширина форми відносно батьківського елемента */
-    padding: 2%; /* Відступи від країв відносно ширини форми */
+    margin: 0 auto;
+    max-width: 30%;
+    padding: 2%;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Тінь відносно ширини форми */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
-    margin-bottom: 1.5%; /* Відступи між групами полів */
+    margin-bottom: 1.5%;
     text-align: left;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 1%; /* Відступи між міткою і полем вводу */
+    margin-bottom: 1%;
     font-weight: bold;
 }
 
 .form-group input {
     width: 100%;
-    padding: 1%; /* Перерозмір полів вводу відносно їх ширини */
-    font-size: 1rem; /* Розмір тексту */
+    padding: 1%;
+    font-size: 1rem;
 }
 
 button[type="submit"] {
-    padding: 1.5% 3%; /* Розмір кнопки відносно її вмісту */
+    padding: 1.5% 3%;
     background-color: #4ed401;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1rem; /* Розмір тексту */
+    font-size: 1rem;
     display: block;
-    margin: 0 auto; /* Розміщення кнопки по центру */
+    margin: 0 auto;
 }
 
 button[type="submit"]:hover {
     background-color: #3aa200;
 }
-
-
